@@ -32,7 +32,32 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Navbar {
+  position: fixed;
+  width: 12%;
+  height: 100%;
+  background-color: #1C2A40;
+  transition: width 0.2s ease-in-out;
+}
+
+.Navbar:hover {
+  width: 18%;
+}
+
+.one {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 12vh;
+  height:12vh;
+  color: white;
+  background-color: #c4c9d1;
 }

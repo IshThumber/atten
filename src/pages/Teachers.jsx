@@ -1,12 +1,12 @@
 import React from "react";
 
 import "../App.css";
-import Popup from "./Popup";
+import PopupT from "./PopupT";
 
 function Teachers() {
   return (
     <>
-      <Popup />
+      <PopupT />
     </>
   );
 }

@@ -1,10 +1,10 @@
 import "../App.css";
-import PopupT from "./PopupT";
+import PopupS from "./PopupT";
 
 function Students() {
   return (
     <>
-      <PopupT />
+      <PopupS />
     </>
   );
 }

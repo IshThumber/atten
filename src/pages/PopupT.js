@@ -3,21 +3,12 @@ import "../App.css";
 import Drop from "./Drop";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-function PopupT() {
-  const [PopupT, setPopupT] = React.useState(false);
-
-  const handleClick = () => {
-    setPopupT(!PopupT);
-  };
-
+function PopupT(props) {
   return (
     <>
-      <button onClick={handleClick} className="btn">
-        Add
-      </button>
-      {PopupT && (
+      {props.Popup && (
         <div className="one">
-          <div className="two" onClick={handleClick}></div>
+          <div className="two" onClick={props.toggle} />
           <div className="popup">
             <form className="Div">
               <div className="Image">
@@ -30,81 +21,82 @@ function PopupT() {
                   <input
                     className="fname-input"
                     type="text"
+                    required="required"
                     placeholder="First Name"
                   />
                 </div>
                 <div className="email">
-                  <label>Email</label>
+                  <label className="">Email</label>
                   <input
                     className="email-input"
                     type="text"
+                    required="required"
                     placeholder="Email"
                   />
                 </div>
                 <div className="dob">
-                  <label>Date of Birth</label>
+                  <label className="">Date of Birth</label>
                   <input
                     className="dob-input"
                     type="date"
+                    required="required"
                     placeholder="Date of Birth"
                   />
                 </div>
                 <div className="Uni">
-                  <label>University</label>
+                  <label className="">University</label>
                   <input
                     className="Uni-input"
                     type="text"
+                    required="required"
                     placeholder="University"
                   />
                 </div>
                 <div className="address">
-                  <label>Address line 1</label>
+                  <label className="">Address</label>
                   <input
                     className="add-input"
                     type="text"
-                    placeholder="Address line 1"
-                  />
-                </div>
-                <div className="address2">
-                  <label>Address line 2</label>
-                  <input
-                    className="add2-input"
-                    type="text"
-                    placeholder="Address line 2"
+                    required="required"
+                    placeholder="Address"
                   />
                 </div>
               </div>
 
               <div className="input2">
                 <div className="lname">
-                  <label>Last Name</label>
+                  <label className="">Last Name</label>
                   <input
                     className="lname-input"
                     type="text"
+                    required="required"
                     placeholder="Last Name"
                   />
                 </div>
                 <div className="phone">
-                  <label>Phone</label>
+                  <label className="">Phone</label>
                   <input
                     className="phone-input"
                     type="text"
+                    required="required"
                     placeholder="Phone"
                   />
                 </div>
                 <div className="pob">
-                  <label>Place of birth</label>
+                  <label className="">Place of birth</label>
                   <input
                     className="pob-input"
                     type="text"
+                    required="required"
                     placeholder="Place of Birth"
                   />
                 </div>
                 <div className="degree">
-                  <label>Degree</label>
+                  <label className="">Degree</label>
                   <input
                     className="degree-input"
                     type="text"
+                    required="required"
                     placeholder="Degree"
                   />
                 </div>
@@ -118,5 +110,6 @@ function PopupT() {
     </>
   );
 }
+
 
 export default PopupT;

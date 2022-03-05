@@ -3,109 +3,148 @@ import "../App.css";
 import Drop from "./Drop";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-function PopupS() {
-  const [PopupS, setPopupS] = React.useState(false);
-
-  const handleClick = () => {
-    setPopupS(!PopupS);
-  };
-
+function PopupS(props) {
   return (
     <>
-      <button onClick={handleClick} className="btn">
-        Add
-      </button>
-      {PopupS && (
+      {props.Popup && (
         <div className="one">
-          <div className="two" onClick={handleClick}></div>
+          <div className="two" onClick={props.toggle} />
           <div className="popup">
-            <form className="Div">
+            <form className="DivS">
               <div className="Image">
                 <Drop />
               </div>
-
-              <div className="input1">
+              <div className="input2">
                 <div className="fname">
                   <label>First Name</label>
                   <input
-                    className="fname-input"
+                    className="field-input"
                     type="text"
+                    required="required"
                     placeholder="First Name"
                   />
+                </div>
+                <div className="class">
+                  <div className="class1">
+                    <label>Class</label>
+                    <input
+                      className="fieldc-input"
+                      type="text"
+                      required="required"
+                      placeholder="Class"
+                    />
+                  </div>
+                  <div className="div">
+                    <label>Division</label>
+                    <input
+                      className="fieldd-input"
+                      type="text"
+                      required="required"
+                      placeholder="Division"
+                    />
+                  </div>
                 </div>
                 <div className="email">
                   <label>Email</label>
                   <input
-                    className="email-input"
+                    className="field-input"
                     type="text"
+                    required="required"
                     placeholder="Email"
-                  />
-                </div>
-                <div className="dob">
-                  <label>Date of Birth</label>
-                  <input
-                    className="dob-input"
-                    type="date"
-                    placeholder="Date of Birth"
-                  />
-                </div>
-                <div className="Uni">
-                  <label>University</label>
-                  <input
-                    className="Uni-input"
-                    type="text"
-                    placeholder="University"
-                  />
-                </div>
-                <div className="address">
-                  <label>Address line 1</label>
-                  <input
-                    className="add-input"
-                    type="text"
-                    placeholder="Address line 1"
-                  />
-                </div>
-                <div className="address2">
-                  <label>Address line 2</label>
-                  <input
-                    className="add2-input"
-                    type="text"
-                    placeholder="Address line 2"
-                  />
-                </div>
-              </div>
-
-              <div className="input2">
-                <div className="lname">
-                  <label>Last Name</label>
-                  <input
-                    className="lname-input"
-                    type="text"
-                    placeholder="Last Name"
                   />
                 </div>
                 <div className="phone">
                   <label>Phone</label>
                   <input
-                    className="phone-input"
+                    className="field-input"
                     type="text"
+                    required="required"
                     placeholder="Phone"
                   />
                 </div>
-                <div className="pob">
-                  <label>Place of birth</label>
+                <div className="address">
+                  <label>Address</label>
                   <input
-                    className="pob-input"
+                    className="field-input"
                     type="text"
+                    required="required"
+                    placeholder="Address"
+                  />
+                </div>
+              </div>
+              <div className="input3">
+                <div className="mname">
+                  <label>Middle Name</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
+                    placeholder="Middle Name"
+                  />
+                </div>
+                <div className="dob">
+                  <label>Date of Birth</label>
+                  <input
+                    className="field-input"
+                    type="date"
+                    required="required"
+                    placeholder="Date of Birth"
+                  />
+                </div>
+                <div className="pemail">
+                  <label>Parent Email</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
+                    placeholder="Parent Email"
+                  />
+                </div>
+                <div className="pphone">
+                  <label>Parent Phone</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
+                    placeholder="Parent Phone"
+                  />
+                </div>
+              </div>
+              <div className="input4">
+                <div className="lname">
+                  <label>Last Name</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="pob">
+                  <label>Place of Birth</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
                     placeholder="Place of Birth"
                   />
                 </div>
-                <div className="degree">
-                  <label>Degree</label>
+                <div className="pemail">
+                  <label>Alt Parent Email</label>
                   <input
-                    className="degree-input"
+                    className="field-input"
                     type="text"
-                    placeholder="Degree"
+                    required="required"
+                    placeholder="Alt Parent Email"
+                  />
+                </div>
+                <div className="pphone">
+                  <label>Alt Parent Phone</label>
+                  <input
+                    className="field-input"
+                    type="text"
+                    required="required"
+                    placeholder="Alt Parent Phone"
                   />
                 </div>
               </div>

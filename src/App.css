@@ -52,14 +52,14 @@
   justify-content: center;
   width: 100%;
   top: 50%;
-  left: 1140px;
+  left: 1110px;
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background-color: white;
   padding: 14px 28px;
   border: #1C2A40 solid 1px;
   border-radius: 9px;
-  max-width: 70%;
+  max-width: 73%;
   height: 80%;
   padding-top: 35px;
 }
@@ -111,8 +111,31 @@
   padding: 0;
 }
 
+.DivS {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-.fname-input, .lname-input, .phone-input, .email-input, .dob-input, .pob-input, .Uni-input, .degree-input, .add-input, .add2-input {
+/* 
+.input2 {
+  padding-right: 0px;
+  margin-right: auto;
+} */
+
+.class {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  /* margin: 10px; */
+}
+
+.fname-input, .lname-input, .phone-input, .email-input, .dob-input, .pob-input, .Uni-input, .degree-input, .add-input, .add2-input, .field-input, .fieldc-input, .fieldd-input {
   display: flex;
   width: 80%;
   background-color: rgb(238, 238, 238);
@@ -121,15 +144,10 @@
   border-radius: 5px;
   padding: 12px;
   margin-top: 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.add-input {
-  width: 80%;
-}
-
-.fname, .lname, .phone, .email, .dob, .pob, .Uni, .degree, .address, .address2, .image {
-  /* margin-left: 24px; */
+.fname, .lname, .phone, .email, .dob, .pob, .Uni, .degree, .address, .address2, .image, .mname, .pemail, .pphone, .class {
+  margin-left: 24px;
   padding-bottom: 40px;
   padding-left: 18px;
   color: #1C2A40;
